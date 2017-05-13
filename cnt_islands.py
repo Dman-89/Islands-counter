@@ -43,41 +43,6 @@ def cnt_islands(islands):
 
 chk(tst1, 0,0)
 
-#                while 1:
-#                    try:
-#                        if islands[i+1][j] == 1:
-#                            neib_cnt.add((i+1, j))
-#                            neib_cnt.add((i, j))
-#                        if islands[i][j+1] == 1:
-#                            neib_cnt.add((i, j+1))
-#                            neib_cnt.add((i, j))
-#                        i,j +=1
-#                    except IndexError:
-#                        pass
-
-cnt_islands(tst1)
-cnt_islands(tst2)
-cnt_islands(tst3)
-cnt_islands(tst4)
-cnt_islands(tst5)
-cnt_islands(tst6)
-cnt_islands(tst7)
-cnt_islands(tst8)
-cnt_islands(tst9)
-cnt_islands(tst10)
-cnt_islands(tst11)
-cnt_islands(tst12)
-cnt_islands(tst13)
-cnt_islands(tst14)
-cnt_islands(tst15)
-cnt_islands(tst16)
-cnt_islands(tst17)
-
-islands = tst8
-
-
-
-
 
 
 
@@ -156,3 +121,21 @@ tst17=[[1,1,0,0,1,0,0],
        [1,0,0,0,1,0,0],
        [1,1,0,1,1,0,0]]
 #4
+
+assert cnt_islands(tst1) == 1
+assert cnt_islands(tst2) == 1
+assert cnt_islands(tst3) == 2
+assert cnt_islands(tst4) == 2
+assert cnt_islands(tst5) == 2
+assert cnt_islands(tst6) == 2
+assert cnt_islands(tst7) == 2
+assert cnt_islands(tst8) == 2
+assert cnt_islands(tst9) == 4
+assert cnt_islands(tst10) == 2
+assert cnt_islands(tst11) == 3
+assert cnt_islands(tst12) == 4
+assert cnt_islands(tst13) == 2
+assert cnt_islands(tst14) == 4
+assert cnt_islands(tst15) == 3
+assert cnt_islands(tst16) == 1
+assert cnt_islands(tst17) == 4
