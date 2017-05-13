@@ -7,9 +7,9 @@ Created on Sat May 13 20:13:12 2017
 
 def cnt_islands(islands):
     isl_count = 0
-    neib_g = set()
-    neib_l = set()
-    
+    neib_g = set() #neibhours set global
+    neib_l = set() #neibhours setfor particular cell when firstly capturing "1"
+    #init recursive function of right and down walk by cells when capturing "1"
     def chk(islands, i,j):
         try:
             if islands[i][j] == 0:
@@ -24,24 +24,22 @@ def cnt_islands(islands):
     cnt_zero = 1    
     for i in range(len(islands)):
         for j in range(len(islands[i])):
-            if islands[i][j] == 1 and (i,j) not in neib_g:            
-                                
+            if islands[i][j] == 1 and (i,j) not in neib_g: #checking 2 conds because there's no sence in iterating if a cell is a neibhour of other cell that's been already captured     
+            
                 chk(islands, i,j)
                 for x in neib_l:
-                    if x in neib_g:
+                    if x in neib_g: #if local neibhour is in global neibhour set, then it's one island, turning off island counter below
                         cnt_zero = 0
 #                        print(x)
                         break
-                neib_g.update(neib_l)
+                neib_g.update(neib_l) #after walking on island updating global neibbhours set
                 neib_l = set()
                 if cnt_zero == 1:
                     isl_count += 1
             cnt_zero = 1
-    if isl_count == 0 and neib != set():
-        isl_count = 1
+#    if isl_count == 0 and neib != set():
+#        isl_count = 1
     return isl_count
-
-chk(tst1, 0,0)
 
 
 
