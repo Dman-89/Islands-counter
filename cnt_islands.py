@@ -4,6 +4,20 @@ Created on Sat May 13 20:13:12 2017
 
 @author: fialdm01
 """
+neib=set()
+def chk(islands, i,j):
+    try:
+        if islands[i][j] == 0:
+            return None
+        else:
+            neib.add((i,j))
+    except IndexError:
+        return None
+    
+    return chk(islands, i+1,j), chk(islands, i,j+1)
+
+chk(tst11,0,0)
+
 
 def cnt_islands(islands):
     isl_count = 0
