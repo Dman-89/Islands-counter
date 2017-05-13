@@ -30,7 +30,7 @@ def cnt_islands(islands):
                 for x in neib_l:
                     if x in neib_g:
                         cnt_zero = 0
-                        print(x)
+#                        print(x)
                         break
                 neib_g.update(neib_l)
                 neib_l = set()
@@ -68,6 +68,10 @@ cnt_islands(tst10)
 cnt_islands(tst11)
 cnt_islands(tst12)
 cnt_islands(tst13)
+cnt_islands(tst14)
+cnt_islands(tst15)
+cnt_islands(tst16)
+cnt_islands(tst17)
 
 islands = tst8
 
@@ -133,3 +137,22 @@ tst13=[[1,1,1,0,0,0,0],
        [0,1,1,0,1,0,0],
        [1,1,1,1,1,0,0]]
 #2
+tst14=[[1,0,1,0,0,0,0],
+       [0,0,1,0,0,0,1],
+       [0,0,0,0,0,0,0],
+       [1,1,1,1,1,0,0]]
+#4
+tst15=[[1,1,0,0,1,0,0],
+       [1,0,1,0,1,0,1],
+       [1,0,0,0,1,0,0],
+       [1,1,1,1,1,0,0]]
+#3
+tst16=[[1,1,1],
+       [0,0,1],
+       [1,1,1]]
+#1
+tst17=[[1,1,0,0,1,0,0],
+       [1,0,1,0,1,0,1],
+       [1,0,0,0,1,0,0],
+       [1,1,0,1,1,0,0]]
+#4
