@@ -25,11 +25,24 @@ def cnt_islands(islands):
         isl_count = 1
     return isl_count
 
+
+
+
+
 cnt_islands(tst1)
 cnt_islands(tst2)
 cnt_islands(tst3)
 cnt_islands(tst4)
 cnt_islands(tst5)
+cnt_islands(tst6)
+cnt_islands(tst7)
+cnt_islands(tst8)
+cnt_islands(tst9)
+cnt_islands(tst10)
+cnt_islands(tst11)
+
+
+islands = tst8
 
 
 
@@ -57,3 +70,29 @@ tst5=[[1,0,1],
       [1,1,0],
       [0,0,0]]
 #2
+tst6=[[0,0,1],
+      [0,0,0],
+      [0,1,0]]
+#2
+tst7=[[0,1,1],
+      [0,0,0],
+      [0,1,0]]
+#2
+tst8=[[0,0,1],
+      [0,0,0],
+      [0,1,0],
+      [1,1,1]]
+#2
+tst9=[[1,0,1],
+      [0,1,0],
+      [0,0,1]]
+#4
+tst10=[[1,1,1,1],
+       [0,1,0,0],
+       [0,0,1,0]]
+#2
+tst11=[[1,1,1,1],
+       [0,1,0,0],
+       [0,0,1,0],
+       [1,1,0,0]]
+#3
